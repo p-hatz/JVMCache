@@ -3,8 +3,6 @@ import java.io.InputStream;
 import com.boomi.execution.ExecutionUtil;
 import com.boomi.Cache;
 
-log = ExecutionUtil.getBaseLogger();
-
 def cache = new Cache();
 
 inData = ExecutionUtil.getDynamicProcessProperty("dppData");
