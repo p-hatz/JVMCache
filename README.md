@@ -14,4 +14,4 @@ For this reason, the sample Population process checks for a Key in the Cache, an
 <p>
 You could schedule the Cache Population process every hour for example and at some point, you would expect all nodes in the Cluster to have a populated Cache to be used by another process.
 <p>
-There is next to zero benefit in using this JAR on a Cloud Runtime as processes are executed in a Forked Execution (either an Atom Worker or a Runner), although you could technically call a sub-process to pre-populate a Cache for a Batch-style process (i.e. a process that runs in a Runner JVM).
+There is next to zero benefit in using this JAR on a Cloud Runtime as processes are executed in a Forked Execution (either an Atom Worker or a Runner), although you could technically call a sub-process to pre-populate a Cache for a Batch-style process (i.e. a process that runs in a Runner JVM), presuming the same Boomi process calls the sub-process.
